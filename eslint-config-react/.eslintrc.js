@@ -1,0 +1,36 @@
+module.exports = {
+  env: {
+    browser: true,
+    node: true,
+    es2021: true,
+    jest: true,
+  },
+  extends: [
+    'react-app',
+    'react-app/jest',
+    'airbnb',
+    'plugin:prettier/recommended',
+  ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: ['react', 'prettier'],
+  rules: {
+    quotes: [
+      'error',
+      'single',
+      {
+        avoidEscape: true,
+        allowTemplateLiterals: true,
+      },
+    ],
+
+    'react/jsx-uses-react': 0,
+    'react/react-in-jsx-scope': 0,
+    'no-console': ['warn'],
+  },
+};
