@@ -32,4 +32,8 @@ Prettier format code.
 
 ## Why we should use husky ?
 
-It will not allow to commit into the git or github the buggy code.
+It will not allow to commit into the bitbucket or github with buggy code.
+
+It will test the code with eslint.
+
+Note: If you want to use #husky in your project you must have a #.git folder in your project directory. Without it husky will not work. It's work with git hooks.
